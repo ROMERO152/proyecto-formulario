@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(45deg,#0d47a1,#1565c0,#1976d2, #1e88e5,#2196f3,#42a5f5,#64b5f6,#90caf9,#0d47a1);
+    background-size: 500%;
+    animation: animado 15s infinite;
+    
+}
+@keyframes animado{
+    0%{
+        background-position: 0% 25%;
+    }
+    25%{
+        background-position: 25% 50%;
+    }
+    50%{
+        background-position: 50% 75%;
+    }
+    75%{
+        background-position: 75% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    background-color: #0d47a1;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+header h1{
+    font-size: 50px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}

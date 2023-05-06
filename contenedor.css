@@ -1,0 +1,65 @@
+#contenedor{
+    height: 700px;
+    width: 100%;
+    border-radius: 25px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#miformulario{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(180deg,#0d47a1,#1565c0,#1976d2, #1e88e5,#2196f3,#42a5f5,#64b5f6,#90caf9);
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.contenido{
+    height: 80px;
+    
+}
+.contenido input{
+    height: 40px;
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+    border: none;
+    outline:rgba(0, 0, 0, 0);
+}
+.rango{
+    height: 50px;
+    width: 100%;
+}
+.rango input{
+    width: 400px;
+    
+}
+#edad{
+    color: aquamarine;
+}
+.rango-salida{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.boton input{
+    padding: 10px;
+    height: 40px;
+    width:10rem;
+    border-radius: 20px;
+    background-color: aqua;
+    border: none;
+    outline:rgba(0, 0, 0, 0);
+}
