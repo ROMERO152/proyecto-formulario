@@ -11,6 +11,11 @@
 
 </head>
 <body>
+    <style>
+        .error{
+            background: red;
+        }
+    </style>
     <header>
         <h1>FORMULARIO WEB</h1>
     </header>
@@ -18,27 +23,31 @@
             <form name="miformulario" id="miformulario" method="get">
                 <div class="contenido">
                     <label for="nombre">Nombre</label> <br>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" pattern="[A-Za-z]{2,15}" title="introduce entre dos y 15 caracteres" required>
                 </div>
                 <div class="contenido">
                     <label for="apellido" >Apellido</label> <br>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido">
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" pattern="[A-Za-z]{2,15}" title="introduce entre dos y 15 caracteres" required>
                 </div>
                 <div class="contenido">
+                    <label for="edad">Edad</label><br>
+                    <input type="number" name="edad" id="edad" min="18" max="100" required size="2">
+                </div>
+                <!-- <div class="contenido">
                     <label for="correo">Correo eléctronico</label> <br>
                     <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo eléctronico" required>
-                </div>
-                <div class="rango">
+                </div> -->
+                <!-- <div class="rango">
                     <label for="edad">Rango de edad</label> <br>
                     <input type="range" name="edad" id="edad" min="0" max="80" step="10" value="10">
                     
                 </div>
                 <div class="rango-salida">
                     <output id="rango">0 a 10</output>
-                </div>
-                <div class="boton">
+                </div> -->
+                <p id="mensajeError"></p>
                     <input type="submit" id="enviar" value="ENVIAR">
-                </div>
+
             </form>
         </main> 
         <footer>
@@ -48,5 +57,6 @@
     
     
 </body>
-<script src="javaScript/javascript.js"></script>
+<!-- <script src="javaScript/javascript.js"></script> -->
+<script src="javaScript/validar.js"></script>
 </html>
